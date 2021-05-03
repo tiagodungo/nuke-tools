@@ -9,10 +9,10 @@ Group {
  ypos -104
  addUserKnob {20 User l Options}
  addUserKnob {7 value l Value}
- value 1
- addUserKnob {22 toggle l Toggle T "if nuke.thisNode().knob('value').value() == 0:\n    nuke.thisNode().knob('value').setValue(1)\nelse:\n    nuke.thisNode().knob('value').setValue(0)" +STARTLINE}
+ value 0.8353455601
+ addUserKnob {22 toggle l Randomize T "import random\nnuke.thisNode().knob(\"value\").setValue(random.random())" +STARTLINE}
  addUserKnob {26 "" +STARTLINE}
- addUserKnob {26 info l "" +STARTLINE T "Random value generator v1.1"}
+ addUserKnob {26 info l "" +STARTLINE T "Random value generator v1.2"}
 }
  Input {
   inputs 0
